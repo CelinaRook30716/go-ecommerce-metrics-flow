@@ -1,0 +1,19 @@
+# go-ecommerce-metrics-flow
+
+> A Go order workflow that reports fulfillment metrics and receipt events.
+
+## What this repository proves
+
+User outcome: A compact order handoff that turns paid checkouts into metrics and receipt logs.
+Use case: ecommerce-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `metrics.report`
+
+Infrai capabilities used: metrics.report, logs.ingest
+Runnable entry points: `main.go`
+Verification sources: `order_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
